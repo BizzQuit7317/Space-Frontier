@@ -2,7 +2,7 @@ use image::{ImageBuffer, RgbImage, Rgb};
 use noise::{Perlin, NoiseFn};
 use rand::Rng;
 
-fn main() {
+fn generate_skin(file_path: &str) {
     let mut rng = rand::thread_rng();
     let num: u32 = rng.r#gen();;
 
@@ -41,5 +41,13 @@ fn main() {
         }
     }
 
-    img.save("terrain.png").expect("Failed to save image! ")
+    img.save(file_path).expect("Failed to save image! ")
+}
+
+fn main() {
+    let _ = generate_skin("planet_1.png");
+    let _ = generate_skin("planet_2.png");
+    let _ = generate_skin("planet_3.png");
+    let _ = generate_skin("planet_4.png");
+    let _ = generate_skin("planet_5.png");
 }
