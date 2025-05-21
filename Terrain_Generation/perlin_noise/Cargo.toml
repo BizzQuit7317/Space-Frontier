@@ -6,3 +6,4 @@ edition = "2024"
 [dependencies]
 image = "0.25.6"
 noise = { version = "0.9.0", features = ["images"] }
+rand = "0.9.1"
