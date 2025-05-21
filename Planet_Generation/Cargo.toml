@@ -1,1 +1,9 @@
-###
+[package]
+name = "planet_generator"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+serde = { version = "1.0.219", features = ["derive"] }
+serde_json = "1.0.140"
+rand = "0.9.1"
